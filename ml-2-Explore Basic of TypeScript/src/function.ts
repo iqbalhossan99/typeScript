@@ -1,11 +1,13 @@
 //  Functions in Typescript
 
 // normal function
+// default value
 
-function add(num1: number, num2:number): number { // return value type
-    return num1 + num2;
+function add(num1: number, num2:number = 10): void { // return value type
+    console.log( num1 + num2);
 }
 
+add(10);
 
 // arrow function
 const addArrow = (num1: number, num2:number): number => num1 + num2;
@@ -35,3 +37,30 @@ const persion:{
 }
 
 persion.addBalance(10);
+
+
+// spread operator
+
+const myFriend = ["Arman", "Mizan", "Nobab"];
+const newFried = ["Rafti", "Nobel"];
+
+myFriend.push(...newFried);
+
+console.log(myFriend);
+
+// rest operator
+
+const greetFriends = (...friends: string[]): void => friends.forEach((fd) => console.log(`Hi ${fd}`))
+
+greetFriends("Nati", "puti", "khunti", "bangla vai");
+
+// array and object dectructure
+
+const myBestFriend = {
+    fullName: "Ramzan Uddin",
+    age: 24
+}
+
+const {fullName: string} = myBestFriend; // We cann't set type here. If we write here something like string then it work as a alter name of fullName
+
+console.log({string});
