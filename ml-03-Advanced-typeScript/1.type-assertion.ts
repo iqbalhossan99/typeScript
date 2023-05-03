@@ -18,7 +18,7 @@ function kgToGram(param: string | number): string | number | undefined{
 }
 
 const resultToBeNumber = kgToGram(10) as number;
-const resultToBeString = <string> kgToGram("10"); // We can use like <string> as well
+const resultToBeString = <string> kgToGram("10"); // We can use like <string> as well. <string> this syntex doesnt allow for tsx file formate
 
 type CustomErrorType={
     message: string
