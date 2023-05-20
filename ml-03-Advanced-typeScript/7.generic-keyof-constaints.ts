@@ -20,4 +20,23 @@ function getProperty<X,Y extends keyof X>(obj: X, key: Y)
 const property = getProperty({name:"Mr.X", age:100}, "age");
 
 // ({name:"Mr.X", age:100}, "age") // 100
-// cosnt a = name:"Mr.X", age:100};
+// cosnt a = name:"Mr.X", age:100};\
+
+
+
+
+interface Person {
+
+    firstName: string;
+  
+    lastName: string;
+  
+  }
+  
+  
+  
+  function fullName<T extends Person>(person: T): string {
+  
+    return `${person.firstName} ${person.lastName}`;
+  
+  }
