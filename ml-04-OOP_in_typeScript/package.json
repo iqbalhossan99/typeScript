@@ -1,0 +1,15 @@
+{
+  "name": "ml-04-oop_in_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inheritance.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only inheritance.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
