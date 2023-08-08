@@ -4,7 +4,7 @@
   "description": "",
   "main": "inheritance.js",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only access_modifiers.ts",
+    "start": "ts-node-dev --respawn --transpile-only getter-setter.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
