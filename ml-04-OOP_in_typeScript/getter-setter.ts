@@ -36,4 +36,5 @@ const myAccount = new BankAccount(550, "Iqbal", 30);
 console.log(myAccount.balance);
 myAccount.deposit = 50;
 
-console.log(myAccount.balance);
+console.log(myAccount.balance); // cann't invoke like function. Just access like a method/property
+console.log(myAccount.test);
